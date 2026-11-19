@@ -1,0 +1,16 @@
+body{
+    background: linear-gradient(to bottom, rgb(199, 199, 120),rgb(206, 159, 71));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+form {
+    background-color: yellow;
+    width: 300px;
+    padding: 20px;
+    border: 2px solid black;
+   
+    
+}
+
+

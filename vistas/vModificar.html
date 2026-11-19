@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Modificar asignatura</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <form action="index.php?controlador=CAsignaturas&metodo=modificarAsignatura&id=<?php echo $objeto->id;?>" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" value="<?php echo $datos['nombre']; ?>">
+        <br><br>
+        <label for="color">Color:</label>
+        <input type="text" id="color" name="color" value="<?php echo $datos['color']; ?>">
+        <br><br>
+        <input type="submit" value="Guardar">
+    </form>
+    <br>
+    <a href="index.php?controlador=CAsignaturas&metodo=obtenerAsignaturas">Volver</a>
+</body>
+</html>

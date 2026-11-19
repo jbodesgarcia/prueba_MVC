@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Eliminar asignatura</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <form action="index.php?controlador=CAsignaturas&metodo=eliminarAsignatura&id=<?php echo $objeto->id; ?>" method="POST">
+        <label for="si">¿Seguro que quieres eliminar esta asignatura?</label>
+        <br><br>
+        <input type="submit" name="si" value="Sí">
+        <a href="index.php?controlador=CAsignaturas&metodo=obtenerAsignaturas">No</a>
+    </form>
+</body>
+</html>
